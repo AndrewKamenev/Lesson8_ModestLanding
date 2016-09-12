@@ -1,0 +1,97 @@
+$body-color: #8d8f92 !default;
+$body-bg: #fff !default;
+
+$font-size-base: 16px !default;
+$line-height-base: 26px !default;
+$font-family-base: 'Open Sans', sans-serif !default;
+$p-margin-bottom: 35px !default;
+
+$link-color: white !default;
+$link-decoration: none !default;
+$link-color-hover: lighten($link-color, 10%)!default;
+$link-decoration: none !default;
+$link-decoration-hover: none!default;
+
+$heading-font-family: 'Quattrocento Sans' !default;
+$heading-font-weight: 700 !default;
+$heading-color: #000 !default;
+
+$heading-font-size-1: 36px !default;
+$heading-margin-1: 65px !default;
+
+$heading-font-size-2: 18px !default;
+$heading-margin-2: 15px !default;
+
+$heading-font-size-3: 16px !default;
+$heading-margin-3: 1em !default;
+
+$heading-font-size-4: 17px !default;
+$heading-margin-4: 25px !default;
+
+$heading-font-size-5: 18px !default;
+$heading-margin-5: 1em !default;
+
+$heading-font-size-6: 12px !default;
+$heading-margin-6: 30px !default;
+
+body {
+	color: $body-color;
+	background-color: $body-bg;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	font-family: $font-family-base;
+}
+p {
+	margin-top: 0;
+	margin-bottom: $p-margin-bottom;
+}
+a {
+	color: $link-color;
+	text-decoration: $link-decoration; 
+	&:hover {
+		color: $link-color-hover;
+		text-decoration: $link-decoration-hover; 
+	}
+}
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: $heading-font-family;
+	color: $heading-color;
+	font-weight: $heading-font-weight;
+	text-transform: uppercase;
+	line-height: 1.3;
+	margin: 0;
+}
+h1,.h1 {
+	font-size: $heading-font-size-1;
+	margin-bottom: $heading-margin-1;
+	padding-left: 15px;
+	border-left: 10px solid #e1e6ea;
+}
+h2,.h2 {
+	font-size: $heading-font-size-2;
+	margin-bottom: $heading-margin-2;
+}
+h3,.h3 {
+	font-size: $heading-font-size-3;
+	margin-bottom: $heading-margin-3;
+}
+h4,.h4 {
+	font-size: $heading-font-size-4;
+	margin-bottom: $heading-margin-4;
+}
+h5,.h5 {
+	font-size: $heading-font-size-5;
+	margin-bottom: $heading-margin-5;
+}
+h6,.h6 {
+	font-size: $heading-font-size-6;
+	margin: $heading-margin-6;
+}
+.text-main {
+	font-size: 16px;
+}
+.text-small {
+	margin: 0;
+	color: $main-color;
+}

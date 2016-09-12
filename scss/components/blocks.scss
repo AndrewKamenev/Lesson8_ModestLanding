@@ -1,0 +1,53 @@
+.block {
+	padding: 80px 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	display: table;
+	border-bottom: solid 1px #dde1e4;
+	width: 100%;
+	table-layout: fixed;
+	&-header {
+		display: table-header-group;
+		height: 1%;
+	}
+	&-content {
+		display: table-row-group;
+	}
+	&-footer {
+		display: table-footer-group;
+		height: 1%;
+	}
+	&-inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&-collapse {
+		padding: 0;
+	}
+	&-fill-height {
+		height: 100vh;
+	}
+	&-fill-width {
+		width: 100vh;
+	}
+	&-inverse {
+		color: #fff;
+		background: $grey-dark no-repeat;
+		background-size: cover;
+	}
+	&-overlay {
+		position: relative;
+		z-index: 1;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			background-color: inherit;
+			opacity: 0.5;
+		}
+	}
+}

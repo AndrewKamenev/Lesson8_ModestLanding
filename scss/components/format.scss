@@ -1,0 +1,55 @@
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.inverse {
+	color: white !important;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.content-justify {
+  display: -webkit-box;
+  /* Android 4.3-, Safari без оптимизации */
+  -webkit-box-pack: justify;
+  /* Android 4.3-, Safari без оптимизации */
+  display: -webkit-flex;
+  /* оптимизация для Safari */
+  -webkit-justify-content: space-between;
+  /* оптимизация для Safari */
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: justify;
+  display: block;
+  /* IE10-, Firefox 12-22 */
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  /* IE10-, Firefox 12-22 */
+}
+.image-wrap img {
+	// width: 100%;
+	height: auto;
+}
+.text-small {
+	font-size: 14px;
+}
+.mb60 {
+	margin-bottom: 60px;
+}
