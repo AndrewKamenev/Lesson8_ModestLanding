@@ -2,7 +2,7 @@ $btn-color: white !default;
 $btn-font-size: 14px !default;
 $btn-bg: transparent !default;
 $btn-border: 1px solid white !default;
-$btn-border-radius: 2px !default;
+$btn-border-radius: 3px !default;
 $btn-padding: 15px 20px !default;
 
 @mixin btn-variants($color, $bg, $border, 
@@ -38,6 +38,14 @@ $btn-padding: 15px 20px !default;
 	&:hover {
 		background: $brand-color;
 		border-color: $brand-color;
+	}
+}
+.btn-form-main {
+	@extend .btn;
+	background: $brand-color;
+	border-color: $brand-color;
+	&:hover {
+		opacity: 0.6;
 	}
 }
 
