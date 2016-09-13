@@ -142,12 +142,14 @@
 }
 .team {
   position: relative;
+  cursor: pointer;
 }
 .soc-icons-hover {
   position: absolute;
   top: 35%;
   left: 22%;
   opacity: 0;
+  z-index: 2;
 }
 .soc-icons-hover-item {
 	@extend .soc-icons-main-item;
@@ -156,11 +158,20 @@
 	background: $grey-dark;
 }
 
-.team:hover >.box-item > .soc-icons-hover {
+.team:hover > .image-wrap:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.4);
+}
+.team:hover > .soc-icons-hover {
 	opacity: 1;
 	z-index: 1;
 }
-.team:hover > .box-item > .box-highlight {
+.team:hover > .box-highlight {
 		background-color: $grey-dark;
 		.text-small, .h3 {
 			color: white !important;
