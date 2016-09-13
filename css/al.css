@@ -24,11 +24,6 @@ img {
   table-layout: fixed;
 }
 
-.footer {
-  display: table-footer-group;
-  height: 1%;
-}
-
 body {
   color: #8d8f92;
   background-color: #fff;
@@ -88,6 +83,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 18px;
   margin-bottom: 1em;
+  margin-top: 35px;
 }
 
 h6, .h6 {
@@ -104,7 +100,7 @@ h6, .h6 {
   color: #1d2126;
 }
 
-.btn {
+.btn, .btn-form-main {
   display: inline-block;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -117,14 +113,53 @@ h6, .h6 {
   font-size: 14px;
   background: transparent;
   border: 1px solid white;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 15px 20px;
   margin-right: 10px;
 }
 
-.btn:hover {
+.btn:hover, .btn-form-main:hover {
   background: #23b7a4;
   border-color: #23b7a4;
+}
+
+.btn-form-main {
+  background: #23b7a4;
+  border-color: #23b7a4;
+}
+
+.btn-form-main:hover {
+  opacity: 0.6;
+}
+
+.form-main {
+  margin-top: -80px;
+  background: #fff;
+  padding: 15px;
+}
+
+.form-main label {
+  margin-top: 20px;
+  font-family: "Quattrocento Sans";
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form-main textarea {
+  margin-bottom: 25px;
+}
+
+.input-main {
+  width: 100%;
+  background-color: #eaeef1;
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+}
+
+input.input-main {
+  height: 44px;
 }
 
 .block {
@@ -256,6 +291,10 @@ h6, .h6 {
   margin-bottom: 60px;
 }
 
+.mt-100 {
+  margin-top: -100px;
+}
+
 .container {
   width: 1165px;
   margin: 0 auto;
@@ -277,7 +316,6 @@ h6, .h6 {
   list-style: none;
   display: inline-block;
   margin: 0;
-  font-family: "OpenSans";
   padding: 0;
 }
 
@@ -288,7 +326,7 @@ h6, .h6 {
 
 .header-menu-link {
   color: #a4aead;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 42px;
@@ -445,6 +483,10 @@ h6, .h6 {
   color: white !important;
 }
 
+.box-item {
+  padding: 15px;
+}
+
 .box-item-4 {
   width: 25%;
   float: left;
@@ -454,6 +496,14 @@ h6, .h6 {
 
 .box-item-3 {
   width: 33.3333%;
+  float: left;
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+}
+
+.box-item-2 {
+  width: 50%;
   float: left;
   display: inline-block;
   position: relative;
@@ -479,7 +529,7 @@ h6, .h6 {
 }
 
 .footer {
-  padding: 40px;
+  padding: 35px;
 }
 
 .soc-icons-footer a {
