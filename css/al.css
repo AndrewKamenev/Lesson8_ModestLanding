@@ -332,6 +332,7 @@ input.input-main {
   line-height: 42px;
   text-transform: uppercase;
   padding: 10px;
+  border: solid 1px transparent;
 }
 
 .header-menu-link:hover {
@@ -433,6 +434,10 @@ input.input-main {
   text-align: center;
   color: white;
   background-color: #23b7a4;
+}
+
+.box-image-wrapper {
+  margin: 0 -15px;
 }
 
 .box-highlight {
