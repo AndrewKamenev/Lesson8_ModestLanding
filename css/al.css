@@ -494,14 +494,12 @@ input.input-main {
 
 .box-item-4 {
   width: 25%;
-  float: left;
   display: inline-block;
   padding: 15px;
 }
 
 .box-item-3 {
   width: 33.3333%;
-  float: left;
   display: inline-block;
   position: relative;
   padding: 15px;
@@ -509,7 +507,6 @@ input.input-main {
 
 .box-item-2 {
   width: 50%;
-  float: left;
   display: inline-block;
   position: relative;
   padding: 15px;

@@ -41,6 +41,7 @@
 	line-height: 42px;
 	text-transform: uppercase;
 	padding: 10px;
+	border: solid 1px transparent;
 	&:hover {
 		border: solid 1px;
 		border-radius: 2px;
@@ -132,6 +133,9 @@
 	color: white;
 	background-color: #23b7a4;
 }
+.box-image-wrapper {
+	margin: 0 -15px;
+}
 .box-item {
 	
 }
@@ -143,6 +147,7 @@
 .team {
   position: relative;
   cursor: pointer;
+  // margin: 0 -15px;
 }
 .soc-icons-hover {
   position: absolute;
@@ -182,20 +187,20 @@
 }
 .box-item-4 {
 	width: 25%;
-	float: left;
+	// float: left;
 	display: inline-block;
 	padding: 15px;
 }
 .box-item-3 {
 	width: 33.3333%;
-	float: left;
+	// float: left;
 	display: inline-block;
 	position: relative;
 	padding: 15px;
 }
 .box-item-2 {
 	width: 50%;
-	float: left;
+	// float: left;
 	display: inline-block;
 	position: relative;
 	padding: 15px;
