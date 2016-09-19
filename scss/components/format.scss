@@ -1,3 +1,12 @@
+ $step-margin: 10px !default;
+ $numbers-steps-margin: 10 !default;
+
+ @for $step-margin from 1 through $numbers-steps-margin {
+            .mb#{$step-margin}0 {
+                margin-bottom: $step-margin*$numbers-steps-margin+px;
+            }
+        }
+
 .left {
 	float: left;
 }
@@ -44,14 +53,11 @@
   /* IE10-, Firefox 12-22 */
 }
 .image-wrap img {
-	// width: 100%;
+	width: 100%;
 	height: auto;
 }
 .text-small {
 	font-size: 14px;
-}
-.mb60 {
-	margin-bottom: 60px;
 }
 .mt-100 {
   margin-top: -100px;
