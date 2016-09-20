@@ -371,6 +371,10 @@ input.input-main {
   margin-top: -100px;
 }
 
+.padding-none {
+  padding: 0;
+}
+
 .row {
   margin: 0 -10px;
 }
@@ -538,6 +542,7 @@ input.input-main {
 
 .container {
   max-width: 1165px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -606,8 +611,8 @@ input.input-main {
 
 .owl-dots {
   position: absolute;
-  right: 100px;
-  bottom: 0;
+  right: -25%;
+  bottom: -20%;
 }
 
 .owl-dots .active {
@@ -757,9 +762,34 @@ input.input-main {
   opacity: 0.5;
 }
 
-@media all and (min-width: 320px) {
-  .container {
-    width: 90%;
+.map {
+  position: relative;
+  z-index: -2;
+}
+
+@media all and (max-width: 768px) {
+  .logo {
+    margin-bottom: 30px;
+  }
+  .header-menu-item {
+    margin-left: 0px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .wrapper {
+    padding: 1%;
+  }
+  .logo {
+    display: block;
+    clear: both;
+  }
+  .header .ul-menu, .header-menu-item {
+    display: block;
+  }
+  .owl-dots {
+    right: 0;
+    bottom: 0;
   }
 }
 
